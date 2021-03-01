@@ -54,7 +54,7 @@ LeptonjetSourceDSAMuonProducer::produce( edm::Event& e, const edm::EventSetup& e
     if ( dsaExtra.pfmuon_detIdSubsetOfAny() ) continue;
 
     //further -id
-    if ( trackref->pt() < 10. ) continue;
+    if ( trackref->pt() < 5. ) continue;
     if ( fabs( trackref->eta() ) > 2.4 ) continue;
     if ( trackref->normalizedChi2() > 4 ) continue;
     if ( hitpattern.numberOfValidMuonCSCHits() == 0 and hitpattern.numberOfValidMuonDTHits() <= 18 ) continue;

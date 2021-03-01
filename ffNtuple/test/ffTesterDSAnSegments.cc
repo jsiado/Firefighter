@@ -151,7 +151,7 @@ ffTesterDSAnSegments::analyze( const edm::Event& e, const edm::EventSetup& es ) 
 
   // loop DSA
   for ( const auto& dsa : *fDSAMuonHdl ) {
-    if ( dsa.pt() < 10 ) continue;
+    if ( dsa.pt() < 5 ) continue;//jsc
     if ( fabs( dsa.eta() ) > 2.4 ) continue;
     if ( dsa.ptError() / dsa.pt() > 1 ) continue;
     if ( dsa.normalizedChi2() > 4 ) continue;
@@ -176,7 +176,7 @@ ffTesterDSAnSegments::analyze( const edm::Event& e, const edm::EventSetup& es ) 
   // loop DSA pair
   for ( size_t i( 0 ); i != fDSAMuonHdl->size(); i++ ) {
     reco::TrackRef iDSA( fDSAMuonHdl, i );
-    if ( iDSA->pt() < 10 ) continue;
+    if ( iDSA->pt() < 5 ) continue; //jsc
     if ( fabs( iDSA->eta() ) > 2.4 ) continue;
     if ( iDSA->ptError() / iDSA->pt() > 1 ) continue;
     if ( iDSA->normalizedChi2() > 4 ) continue;

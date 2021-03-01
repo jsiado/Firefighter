@@ -93,7 +93,7 @@ def buildCommonBaseArgs(args):
     if args.jobtype == 'triggerStudy':
         cbkwargs.update(dict(
             ffConfigName='ffNtupleFromAOD_trigger_v2_cfg.py',
-            outbase='/store/group/lpcmetx/SIDM/TriggerStudy/',
+            outbase='/store/group/lpcmetx/SIDM/Joaquin/reNtuple/',
             ))
 
     return cbkwargs
