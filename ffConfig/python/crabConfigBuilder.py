@@ -35,7 +35,7 @@ class configBuilder:
             splittingMode="FileBased",
             unitsPerJob=20,
             ffConfigName = 'ffNtupleFromAOD_v2_cfg.py',
-            outbase="/store/group/lpcmetx/SIDM/ffNtupleV2/",
+            outbase="/store/group/lpcmetx/SIDM/ffNtupleV3/",
             year=2018,
             ignoreLocality=False,
         )
@@ -86,6 +86,7 @@ class configBuilder:
             config.JobType.psetName = self.specs_["psetName"]
             config.JobType.numCores = self.specs_["numThreads"]
             config.JobType.maxMemoryMB = self.specs_["maxMemory"]
+            config.JobType.allowUndistributedCMSSW = True
             config.JobType.disableAutomaticOutputCollection = False
             config.Data.inputDataset = ds
             config.Data.inputDBS = "phys03"

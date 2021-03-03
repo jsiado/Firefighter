@@ -38,7 +38,7 @@ LeptonjetSourceDSAMuonProducer::produce( edm::Event& e, const edm::EventSetup& e
 
     //pre -id
     if ( ( hitpattern.cscStationsWithValidHits() + hitpattern.dtStationsWithValidHits() ) < 2 ) continue;
-    if ( ( hitpattern.numberOfValidMuonCSCHits() + hitpattern.numberOfValidMuonDTHits() ) < 13 ) continue;
+    if ( ( hitpattern.numberOfValidMuonCSCHits() + hitpattern.numberOfValidMuonDTHits() ) < 12 ) continue;
     if ( ( trackref->ptError() / trackref->pt() ) > 1. ) continue;
 
     const auto& dsaExtra = (*fDSAExtraHdl)[muonref];
@@ -56,7 +56,7 @@ LeptonjetSourceDSAMuonProducer::produce( edm::Event& e, const edm::EventSetup& e
     //further -id
     if ( trackref->pt() < 5. ) continue;
     if ( fabs( trackref->eta() ) > 2.4 ) continue;
-    if ( trackref->normalizedChi2() > 4 ) continue;
+    if ( trackref->normalizedChi2() > 2.5 ) continue;
     if ( hitpattern.numberOfValidMuonCSCHits() == 0 and hitpattern.numberOfValidMuonDTHits() <= 18 ) continue;
 
     // reject cosmic-like
