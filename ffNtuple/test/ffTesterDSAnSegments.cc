@@ -183,7 +183,7 @@ ffTesterDSAnSegments::analyze( const edm::Event& e, const edm::EventSetup& es ) 
 
     for ( size_t j( i + 1 ); j != fDSAMuonHdl->size(); j++ ) {
       reco::TrackRef jDSA( fDSAMuonHdl, j );
-      if ( jDSA->pt() < 10 ) continue;
+      if ( jDSA->pt() < 5 ) continue;
       if ( fabs( jDSA->eta() ) > 2.4 ) continue;
       if ( jDSA->ptError() / jDSA->pt() > 1 ) continue;
       if ( jDSA->normalizedChi2() > 4 ) continue;

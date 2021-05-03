@@ -92,7 +92,7 @@ class configBuilder:
             numThreads=1,
             maxMemory=2000,
             reportEvery=10000,
-            outputFileName='ffNtuple.root',
+            outputFileName='ffNtuplev3.root',
             skimFileName='ffAOD.root',
             leptonJetCandStrategy='hadronFree',
             eventRegion='control',
@@ -101,7 +101,7 @@ class configBuilder:
             year=2018,
             redirector='',
             ffConfigName='ffNtupleFromAOD_v2_cfg.py',
-            outbase='/store/group/lpcmetx/SIDM/ffNtupleV2/'
+            outbase='/store/group/lpcmetx/SIDM/ffNtupleV4/'
         )
         self.specs_.update(kwargs)
         self.specs_['outLFNDirBase'] = join(self.specs_['outbase'], str(self.specs_['year']))

@@ -38,7 +38,7 @@ LeptonjetSourceDSAMuonProducer::produce( edm::Event& e, const edm::EventSetup& e
 
     //pre -id
     if ( ( hitpattern.cscStationsWithValidHits() + hitpattern.dtStationsWithValidHits() ) < 2 ) continue;
-    if ( ( hitpattern.numberOfValidMuonCSCHits() + hitpattern.numberOfValidMuonDTHits() ) < 12 ) continue;
+    if ( ( hitpattern.numberOfValidMuonCSCHits() + hitpattern.numberOfValidMuonDTHits() ) < 13 ) continue;
     if ( ( trackref->ptError() / trackref->pt() ) > 1. ) continue;
 
     const auto& dsaExtra = (*fDSAExtraHdl)[muonref];

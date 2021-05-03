@@ -23,6 +23,7 @@ parser.add_argument("--jobtype", "-t", default="ntuple", type=str, choices=["ntu
 parser.add_argument("--eventregion", "-r", default="all", type=str, choices=["all", "single", "signal", "proxy", "muonType"])
 parser.add_argument("--unitsperjob", "-u", default=1, type=int, help='[CRAB] - MC: FileBased, DATA: LumiBased. [CONDOR] - FileBased')
 parser.add_argument("--test", action='store_true')
+parser.add_argument("--newTRG", action='store_true')
 args = parser.parse_args()
 assert(os.path.exists(args.datasets[0]))
 
@@ -100,8 +101,13 @@ def buildCommonBaseArgs(args):
     ## **reNtuples for DsaPt studies** jobs
     if args.test:
         cbkwargs.update(dict(
-            outbase='/store/group/lpcmetx/SIDM/reNtuple/',
-            ))
+            outbase='/store/group/lpcmetx/SIDM/ffNtupleV3/',))
+
+    ## new triggers
+    if args.newTRG:
+        cbkwargs.update(dict(
+            ffConfigName='ffNtupleFromAOD_trigger_v2_cfg.py',
+            outbase='/store/group/lpcmetx/SIDM/ffNtupleV4/',))
 
     return cbkwargs
 
