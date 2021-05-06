@@ -104,18 +104,7 @@ triggerPaths=cms.vstring(
     "HLT_TrkMu16_DoubleTrkMu6NoFiltersNoVtx",
 
     #newTRG for 2021-may study
-    
     #Double Muon
-    "HLT_DoubleL2Mu23NoVtx_2Cha_CosmicSeed_NoL2Matched"
-    "HLT_DoubleL2Mu23NoVtx_2Cha_CosmicSeed"
-    "HLT_DoubleL2Mu23NoVtx_2Cha_NoL2Matched"
-    "HLT_DoubleL2Mu23NoVtx_2Cha"
-    "HLT_DoubleL2Mu25NoVtx_2Cha_CosmicSeed_Eta2p4"
-    "HLT_DoubleL2Mu25NoVtx_2Cha_CosmicSeed_NoL2Matched"
-    "HLT_DoubleL2Mu25NoVtx_2Cha_CosmicSeed"
-    "HLT_DoubleL2Mu25NoVtx_2Cha_Eta2p4"
-    "HLT_DoubleL2Mu25NoVtx_2Cha_NoL2Matched"
-    "HLT_DoubleL2Mu25NoVtx_2Cha"
     "HLT_DoubleL2Mu30NoVtx_2Cha_CosmicSeed_Eta2p4"
     "HLT_DoubleL2Mu30NoVtx_2Cha_Eta2p4"
     "HLT_DoubleMu33NoFiltersNoVtxDisplaced"
@@ -123,9 +112,7 @@ triggerPaths=cms.vstring(
     "HLT_DoubleMu43NoFiltersNoVtx"
     "HLT_DoubleMu48NoFiltersNoVtx"
 
-
     #Muon EG triggers
-
     "HLT_DiMu4_Ele9_CaloIdL_TrackIdL_DZ_Mass3p8"
     "HLT_DiMu9_Ele9_CaloIdL_TrackIdL_DZ"
     "HLT_DiMu9_Ele9_CaloIdL_TrackIdL"
@@ -140,25 +127,20 @@ triggerPaths=cms.vstring(
     "HLT_Mu23_TrkIsoVVL_Ele12_CaloIdL_TrackIdL_IsoVL"
     "HLT_Mu27_Ele37_CaloIdL_MW"
     "HLT_Mu37_Ele27_CaloIdL_MW"
-
     "HLT_Mu38NoFiltersNoVtxDisplaced_Photon38_CaloIdL"
     "HLT_Mu43NoFiltersNoVtxDisplaced_Photon43_CaloIdL"
     "HLT_Mu43NoFiltersNoVtx_Photon43_CaloIdL"
     "HLT_Mu48NoFiltersNoVtx_Photon48_CaloIdL"
-
     "HLT_Mu8_DiEle12_CaloIdL_TrackIdL_DZ"
     "HLT_Mu8_DiEle12_CaloIdL_TrackIdL"
     "HLT_Mu8_Ele8_CaloIdM_TrackIdM_Mass8_PFHT350_DZ"
     "HLT_Mu8_Ele8_CaloIdM_TrackIdM_Mass8_PFHT350"
-
 
     #Single Muon
     "HLT_L1SingleMu18"
     "HLT_L1SingleMu25"
     "HLT_L2Mu10"
     "HLT_L2Mu50"
-    
-    
     
     #Egamma
     "HLT_Photon100EBHE10"
