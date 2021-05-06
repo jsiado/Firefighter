@@ -103,11 +103,11 @@ def buildCommonBaseArgs(args):
         cbkwargs.update(dict(
             outbase='/store/group/lpcmetx/SIDM/ffNtupleV3/',))
 
-    ## new triggers
+    ## new triggers---05/2021
     if args.newTRG:
         cbkwargs.update(dict(
             ffConfigName='ffNtupleFromAOD_trigger_v2_cfg.py',
-            outbase='/store/group/lpcmetx/SIDM/ffNtupleV4/',))
+            outbase='/store/group/lpcmetx/SIDM/TriggerStudy/newTRG/',))
 
     return cbkwargs
 
